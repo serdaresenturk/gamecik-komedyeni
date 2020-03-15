@@ -32,9 +32,29 @@ async def caps(context):
 @bot.command(pass_context = True)
 async def suphe(context):
     if context.message.author.id == ("189501713621712898"):
-        await bot.say("Bi' saniye!" + context.message.author.mention + " yöneticiye şüpheli testi yapamam.")
-    else if context.message.author.id == ("339488733789290496"):
+        await
+        message.channel.send({
+            embed: {
+                color: 14887977,
+                author: {
+                    name: client.user.username,
+                    icon_url: client.user.avatarURL
+                },
+                description: "Bi' saniye!" + context.message.author.mention + " yöneticiye şüpheli testi yapamam.",
+                footer: {
+                    icon_url: client.user.avatarURL,
+                    text: "GAME'CİK Şüpheli Sorgulama Birimi"
+                }
+            }
+        });
+    elif context.message.author.id == ("339488733789290496"):
         await bot.say("Bakın! " + context.message.author.mention + " tam bir şüpheli! Polisi kim arıyor?")
+    elif context.message.author.id == ("370266360850284555"):
+        await bot.say("Hadi ama! " + context.message.author.mention + " kimseye zarar vermez.")
+    elif context.message.author.id == ("393150554320273408"):
+        await bot.say(context.message.author.mention + " ile ilgili derin söylentiler var. Kayıp kargolarla ilgili bir şuçtan aranıyor!")
+    elif context.message.author.id == ("370266360850284555"):
+        await bot.say("Hadi ama! " + context.message.author.mention + " kimseye zarar vermez.")
     else:
         await bot.say("Rahatla " + context.message.author.mention + " şüpheli değilsin.")
 
