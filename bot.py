@@ -33,6 +33,8 @@ async def caps(context):
 async def suphe(context):
     if context.message.author.id == ("189501713621712898"):
         await bot.say("Bi' saniye!" + context.message.author.mention + " yöneticiye şüpheli testi yapamam.")
+    else if context.message.author.id == ("339488733789290496"):
+        await bot.say("Bakın! " + context.message.author.mention + " tam bir şüpheli! Polisi kim arıyor?")
     else:
         await bot.say("Rahatla " + context.message.author.mention + " şüpheli değilsin.")
 
