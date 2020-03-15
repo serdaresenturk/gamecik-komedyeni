@@ -30,10 +30,10 @@ async def caps(context):
     await bot.send_file(context.message.channel,fp="./resimler/"+meme ,filename=meme)
 
 @bot.command(pass_context = True)
-async def delaware(context):
-    if context.message.author.id == ("160822173446045697"):
-        await bot.say(context.message.author.mention + " is from delaware and therefore sucks balls")
+async def suphe(context):
+    if context.message.author.id == ("189501713621712898"):
+        await bot.say("Bi' saniye!" + context.message.author.mention + " yöneticiye şüpheli testi yapamam.")
     else:
-        await bot.say(context.message.author.mention + " is not from delaware and is therefore cool B)")
+        await bot.say("Rahatla " + context.message.author.mention + " şüpheli değilsin.")
 
 bot.run(os.environ['BOT_TOKEN'])
