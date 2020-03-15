@@ -1,4 +1,4 @@
-#GAME'CİK - Komedyen botu (yaratıcı: serdar_esenturk)
+# GAME'CİK - Komedyen botu (yaratıcı: serdar_esenturk)
 
 import discord
 from discord.ext import commands
@@ -37,4 +37,4 @@ async def delaware(context):
         await bot.say(context.message.author.mention + " is not from delaware and is therefore cool B)")
 
 # TOKEN = os.getenv("TOKEN")
-bot.run(os.environ['BOT_TOKEN'])
+bot.run(os.environ['F1tX5VAOiTSAtP08bhoHBjojbxq__h86'])
