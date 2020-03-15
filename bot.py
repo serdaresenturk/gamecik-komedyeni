@@ -32,8 +32,7 @@ async def caps(context):
 @bot.command(pass_context = True)
 async def suphe(context):
     if context.message.author.id == ("189501713621712898"):
-        await
-        message.channel.send({
+        await message.channel.send({
             embed: {
                 color: 14887977,
                 author: {
