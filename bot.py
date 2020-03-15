@@ -32,20 +32,7 @@ async def caps(context):
 @bot.command(pass_context = True)
 async def suphe(context):
     if context.message.author.id == ("189501713621712898"):
-        await message.channel.send({
-            embed: {
-                color: 14887977,
-                author: {
-                    name: client.user.username,
-                    icon_url: client.user.avatarURL
-                },
-                description: "Bi' saniye!" + context.message.author.mention + " yöneticiye şüpheli testi yapamam.",
-                footer: {
-                    icon_url: client.user.avatarURL,
-                    text: "GAME'CİK Şüpheli Sorgulama Birimi"
-                }
-            }
-        });
+       await bot.say("Bi' saniye!" + context.message.author.mention + " yöneticiye şüpheli testi yapamam.")
     elif context.message.author.id == ("339488733789290496"):
         await bot.say("Bakın! " + context.message.author.mention + " tam bir şüpheli! Polisi kim arıyor?")
     elif context.message.author.id == ("370266360850284555"):
