@@ -36,4 +36,4 @@ async def delaware(context):
     else:
         await bot.say(context.message.author.mention + " is not from delaware and is therefore cool B)")
 
-bot.run("BOT_TOKEN")
+bot.run(os.environ['BOT_TOKEN'])
