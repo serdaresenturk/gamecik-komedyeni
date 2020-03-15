@@ -6,8 +6,6 @@ import asyncio
 import os
 import random
 
-client = discord.Client()
-
 bot = commands.Bot(command_prefix="!")
 
 print('----')
@@ -38,4 +36,4 @@ async def delaware(context):
     else:
         await bot.say(context.message.author.mention + " is not from delaware and is therefore cool B)")
 
-client.run('BOT_TOKEN')
+bot.run('BOT_TOKEN')
