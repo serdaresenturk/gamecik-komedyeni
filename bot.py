@@ -46,7 +46,7 @@ async def suphe(context):
         
 @bot.command(pass_context=True)
 async def chnick(ctx, member: discord.Member, nick):
-    await member.edit(nick=nick)
+    await member.edit(nick= "Test")
     await ctx.send(f'Nickname was changed for {member.mention} ')
 
 bot.run(os.environ['BOT_TOKEN'])
