@@ -43,10 +43,5 @@ async def suphe(context):
         await bot.say("Hadi ama! " + context.message.author.mention + " kimseye zarar vermez.")
     else:
         await bot.say("Rahatla " + context.message.author.mention + " şüpheli değilsin.")
-        
-@bot.command()
-async def addegis(ctx):
-    member = ctx.message.author
-    await member.edit(nick='Nickname wanted')
 
 bot.run(os.environ['BOT_TOKEN'])
