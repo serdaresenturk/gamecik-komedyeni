@@ -43,5 +43,10 @@ async def suphe(context):
         await bot.say("Hadi ama! " + context.message.author.mention + " kimseye zarar vermez.")
     else:
         await bot.say("Rahatla " + context.message.author.mention + " şüpheli değilsin.")
+        
+@bot.command(pass_context=True)
+async def chnick(ctx, member: discord.Member, nick):
+    await member.edit(nick=nick)
+    await ctx.send(f'Nickname was changed for {member.mention} ')
 
 bot.run(os.environ['BOT_TOKEN'])
