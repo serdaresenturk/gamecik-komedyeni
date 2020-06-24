@@ -44,7 +44,7 @@ async def suphe(context):
     else:
         await bot.say("Rahatla " + context.message.author.mention + " şüpheli değilsin.")
         
-@bot.command(pass_context=True)
+@bot.command()
 async def addegis(ctx):
     member = ctx.message.author
     await member.edit(nick='Nickname wanted')
